@@ -1,0 +1,24 @@
+{
+  "name": "Checker",
+  "plural": "Checker",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "FileName": {
+      "type": "string",
+      "required": true
+    },
+    "Links": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
