@@ -25,11 +25,14 @@ module.exports = function(Checker) {
         err = new Error('Document should be of PDF format/type.');
         err.statusCode = 400;
       } else if (errorType == 'DownloadError') {
-        err = new Error('Unable to reach the provided URL');
+        err = new Error('Unable to reach the provided URL.');
         err.statusCode = 404;
       } else if (errorType == 'NameError') {
-        err = new Error('Please check your file and try again');
+        err = new Error('Please check your file and try again.');
         err.statusCode = 400;
+      } else if (errorType == 'FileNotFoundError') {
+        err = new Error('File not found.');
+        err.statusCode = 404;
       } else {
         err = new Error('Something went wrong. Please try again.');
         err.statusCode = 501;
