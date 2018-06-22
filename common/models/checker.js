@@ -1,6 +1,9 @@
 'use strict';
 let assert = require('assert');
 let pythonBridge = require('python-bridge');
+let linkCheck = require('link-check');
+let url = require('url');
+let ping = require('ping');
 
 module.exports = function(Checker) {
   Checker.getLinks = function(URL, cb) {
@@ -60,4 +63,79 @@ module.exports = function(Checker) {
       },
     }
   );
+
+  Checker.checkLinks = function(links, cb) {
+    function checkSingleLink(link) {
+      return new Promise((resolve, reject) => {
+        let adr = link.replace(/[${}|[\]\\<>]/g, '');
+        /* https://www.regextester.com/94502 */
+        let matchUrl = adr.match(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g);
+        if (matchUrl == null || matchUrl.length < 1) {
+          resolve({
+            'link': adr,
+            'status': null,
+          });
+        }
+        let q = url.parse(adr, true);
+        ping.sys.probe(q.host, function(isAlive) {
+          if (isAlive) {
+            if (adr.search(/linkedin.com/i) > 0) {
+              resolve({
+                'link': adr,
+                'status': null,
+              });
+            }
+            linkCheck(adr, function(err, result) {
+              if (err) {
+                return err;
+              }
+              resolve({
+                'link': result.link,
+                'status': result.status,
+              });
+            });
+          } else {
+            resolve({
+              'link': adr,
+              'status': 404,
+            });
+          }
+        });
+      });
+    }
+
+    function checkMultipleLinks(links) {
+      const arrayOfPromises = links.map(link => checkSingleLink(link));
+      return Promise.all(arrayOfPromises);
+    }
+
+    function filterLinks(links) {
+      return new Promise((resolve, reject) => {
+        checkMultipleLinks(links).then(response => {
+          resolve(response);
+        });
+      });
+    }
+    console.log(links);
+    filterLinks(links).then(filteredLinks => {
+      console.log(filteredLinks);
+      cb(null, filteredLinks);
+    });
+  };
+
+  Checker.remoteMethod('checkLinks', {
+    http: {
+      path: '/checkLinks',
+      verb: 'get',
+      source: 'body',
+    },
+    accepts: {
+      arg: 'links',
+      type: 'array',
+    },
+    returns: {
+      arg: 'links',
+      type: 'array',
+    },
+  });
 };
