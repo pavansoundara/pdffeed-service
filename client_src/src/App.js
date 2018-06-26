@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
+// import Anime from 'react-anime';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Axios from 'axios';
-import logo from './logo1.svg';
+
 import pdf from './pdf-file.svg';
+import gear from './gear.svg';
+import srch from './search.svg';
+
 
 import './App.css';
 
@@ -12,12 +17,18 @@ class app extends Component {
     this.state = {
       inputUrl: '',
       files: [],
-      dropzoneActive: false
+      links: [],
+      dropzoneActive: false,
+      loading: false,
+      loaded: false,
+      hasError: false,
+      error: ''
     };
     this.onDrop = this.onDrop.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.getLinks = this.getLinks.bind(this);
-    this.uploadSingleFile = this.uploadSingleFile.bind(this)
+    this.uploadSingleFile = this.uploadSingleFile.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   handleInputChange(event) {
@@ -30,7 +41,8 @@ class app extends Component {
   onDrop(files) {
     this.setState({
       files,
-      dropzoneActive: false
+      dropzoneActive: false,
+      loading: true
     },
     this.uploadSingleFile
     );
@@ -49,20 +61,34 @@ class app extends Component {
   }
 
   getLinks() {
-    const getLinksApi = "http://ec2-52-90-113-86.compute-1.amazonaws.com:3000/api/Checker/getlinks";
+    if(this.state.loading===false){
+      this.setState({
+        loading:true
+      })
+    }
+    const getLinksApi = "http://localhost:3000/api/Checker/getlinks";
     Axios.get(getLinksApi, {
       params: {
         url: this.state.inputUrl
       }
     }).then(response => {
       this.setState({
-        links: response.data.links
+        links: response.data.links,
+        loading: false,
+        loaded: true
       });
+    }).catch(error => {
+      this.setState({
+        hasError: true,
+        error: error.response.data.error,
+        loading: false,
+        loaded: false
+      })
     });
   }
 
   uploadSingleFile() {
-    const CONTAINER_API ='http://ec2-52-90-113-86.compute-1.amazonaws.com:3000/api/Container/files/upload';
+    const CONTAINER_API ='http://localhost:3000/api/Container/files/upload';
     let bodyFormData = new FormData();
     bodyFormData.set('file', this.state.files[0]);
     Axios({
@@ -75,11 +101,32 @@ class app extends Component {
       console.log(response.data.result);
       let file = response.data.result.files.file[0];
       this.setState({
-          inputUrl: 'http://ec2-52-90-113-86.compute-1.amazonaws.com:3000/api/Container/' + file.container + '/download/' + file.name
+          inputUrl: 'http://localhost:3000/api/Container/' 
+          + file.container + '/download/' + file.name,
       },
       this.getLinks
     );
+    }).catch(error => {
+      this.setState({
+        hasError: true,
+        error: error.response.data.error,
+        loading: false
+      })
     });
+  }
+
+  scrollTo() {
+    scroller.scrollTo('anchor', {
+      duration: 1000,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
+
+  handleKeyPress(event) {
+    if(event.key === 'Enter'){
+      this.getLinks();
+    }
   }
 
   componentDidMount() {
@@ -88,13 +135,66 @@ class app extends Component {
 
   render() {
     console.log(this.state);
+    let box = ''
+    if(this.state.loading){
+      box = <div className="card card__loading">
+        <i className="material-icons card__spinner">data_usage</i>
+        <p>Extracting</p>
+      </div>
+    } else if(!this.state.loading && !this.state.loaded) {
+      box = <div className="card card--uploadbox">
+      <Dropzone accept="application/pdf" 
+      onDragEnter={this.onDragEnter.bind(this)} 
+      onDragLeave={this.onDragLeave.bind(this)} 
+      multiple={false} 
+      onDrop={this.onDrop} 
+      type="file" 
+      className='form-control upload-box'>
+        <img src={pdf} alt="pdf icon" />
+        <h5 >Drag &amp; Drop</h5>
+        <p> Choose a file or drag it here</p>
+      </Dropzone>
+    </div>
+    } else if (this.state.loaded){
+      this.scrollTo();
+      if(this.state.links.length > 0){
+        box = <div className="card">
+        <div className="table-responsive-sm">
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">Link</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.state.links.map(link =>{
+                return(
+                <tr>
+                  <td>{link}</td>
+                  <td>NA</td>
+                </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      } else {
+        box = <div className="card card__loading">
+        <i className="material-icons card__spinner">refresh</i>
+        <p>No Links Found</p>
+      </div>
+      }
+    }
     return (
       <div className="app">
-        <div className="app__header">
+        <div className="app__header" >
           <div className="row justify-content-md-center">
             <div className="app__logo col-md-12">
-              <div className="app__logotext ">
+              <div className="app__logotext noselect" >
                 <span className="app__logotext--red">Pdf</span>Feed
+                <sup className="app__logotext--super">Beta</sup>
               </div>
             </div>
             <div className="app__logocap col-md-12">
@@ -110,11 +210,18 @@ class app extends Component {
               <div className="card card--searchbar">
                 <div className="row no-gutters">
                   <div className="col-11 col-sm-11 col-xs-11">
-                    <input type="text" className="card__input" name="inputUrl" onChange={this.handleInputChange}  placeholder="http://www.example.com/file.pdf" ref={(input) => { this.nameInput = input; }}/>
+                    <input type="text" 
+                    className="card__input" 
+                    name="inputUrl" 
+                    onChange={this.handleInputChange} 
+                    placeholder="http://www.example.com/file.pdf" 
+                    onKeyPress={this.handleKeyPress}
+                    ref={(input) => { this.nameInput = input; }}/>
                   </div>
                   <div className="col-1 col-sm-1 col-xs-1">
                     <div className="card__options">
-                      <a href="#" className="card--buttoncolor" onClick={this.getLinks}><i className="material-icons card__searchbutton">search</i></a>
+                      <a href="#" className="card--buttoncolor" onClick={this.getLinks}>
+                      <i className="material-icons card__searchbutton">search</i></a>
                     </div>
                   </div>
                 </div>
@@ -125,16 +232,9 @@ class app extends Component {
             <div className="col-12">
               <p className="app__placehold">or</p>
             </div>
-            <div className="col-md-8">
-              <div className={"card card--uploadbox "+ this.state.activeClass}>
-                <Dropzone accept="application/pdf" onDragEnter={this.onDragEnter.bind(this)} onDragLeave={this.onDragLeave.bind(this)}
-                multiple={false} onDrop={this.onDrop} type="file" className='form-control upload-box'>
-                  <img src={pdf} alt="Kiwi standing on oval" />
-                  <h5 >Drag &amp; Drop</h5>
-                  <p> Choose a file or drag it here</p>
-                </Dropzone>
-              </div>
-            </div>
+            <Element className="col-md-8" name="anchor">
+              {box}
+            </Element>
           </div>
         </div>
       </div>

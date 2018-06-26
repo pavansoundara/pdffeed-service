@@ -7,39 +7,56 @@ let ping = require('ping');
 
 module.exports = function(Checker) {
   Checker.getLinks = function(URL, cb) {
+    let urls = [URL];
     /* Python Bridge Part */
     let python = pythonBridge();
-    python.ex `import pdfx`;
+    python.ex `import pdffeed`;
     python.ex `
         def getLinks(url):
-            pdf = pdfx.PDFx(url)
-            return pdf.get_references_as_dict()
-    `;
+          links = []
+          try:
+              links = pdffeed.feeder(url)
+          except Exception as e:
+              raise
+          return links
+        `;
     /* Python Bridge part Ends */
-    python `getLinks(${URL})`.then(x => {
-      var response = x;
-      python.end();
-      cb(null, response.url);
+    python `getLinks(${urls})`.then(x => {
+      if (x == null || x.length < 1) {
+        x = [];
+        cb(null, x);
+      } else {
+        var response = x;
+        python.end();
+        cb(null, response);
+      }
     }).catch(error => {
       let errorType = error.exception.type.name;
       let err;
-      console.log(errorType);
-      if (errorType == 'PDFInvalidError') {
+      console.log(error.exception);
+      if (errorType == 'PDFSyntaxError') {
         err = new Error('Document should be of PDF format/type.');
         err.statusCode = 400;
-      } else if (errorType == 'DownloadError') {
+      } else if (errorType == 'URLError') {
         err = new Error('Unable to reach the provided URL.');
         err.statusCode = 404;
       } else if (errorType == 'NameError') {
         err = new Error('Please check your file and try again.');
         err.statusCode = 400;
-      } else if (errorType == 'FileNotFoundError') {
+      } else if (errorType == 'HTTPError') {
         err = new Error('File not found.');
         err.statusCode = 404;
+      } else if (errorType == 'IOError') {
+        err = new Error('File not found locally');
+        err.statusCode = 404;
+      } else if (errorType == 'ValueError') {
+        err = new Error(error.exception.message);
+        err.statusCode = 400;
       } else {
         err = new Error('Something went wrong. Please try again.');
         err.statusCode = 501;
       }
+
       cb(err);
     });
   };
@@ -126,7 +143,7 @@ module.exports = function(Checker) {
   Checker.remoteMethod('checkLinks', {
     http: {
       path: '/checkLinks',
-      verb: 'get',
+      verb: 'post',
       source: 'body',
     },
     accepts: {
