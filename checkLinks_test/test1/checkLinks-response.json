@@ -1,0 +1,2520 @@
+{
+  "links": [
+    {
+      "link": "http://aicecream.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ajnorton.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://initajay.me/",
+      "status": 404
+    },
+    {
+      "link": "https://about.me/ajay-s",
+      "status": "alive"
+    },
+    {
+      "link": "http://pawar.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "http://akashp.co/",
+      "status": 404
+    },
+    {
+      "link": "http://github.com/analyticalmonk",
+      "status": "alive"
+    },
+    {
+      "link": "http://akashtandon.com/",
+      "status": "dead"
+    },
+    {
+      "link": "http://yarabarla.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://akshaydixi.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://akul.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alainakafk.es/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alanchen.co/",
+      "status": 404
+    },
+    {
+      "link": "http://albert.wtf/",
+      "status": "alive"
+    },
+    {
+      "link": "http://albertovillalobos.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.alecrobins.me/",
+      "status": 404
+    },
+    {
+      "link": "http://alejandrorioja.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alexcory.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://www.alex-johnson.net/",
+      "status": 404
+    },
+    {
+      "link": "http://koshy.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alexfortis.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alw231.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "http://alexandermaru.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://aamistak.me/",
+      "status": 404
+    },
+    {
+      "link": "https://alikarpuzoglu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alstonlin.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://alvindeng.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://amanroy.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://amarpandey.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://amberja.in/",
+      "status": "alive"
+    },
+    {
+      "link": "https://amineafia.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://amitness.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://singhamrit.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ananth.co.in/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anat.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://avarga.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.limbera.com.au/",
+      "status": 404
+    },
+    {
+      "link": "http://andrewsb.me/",
+      "status": 404
+    },
+    {
+      "link": "http://andrewcui.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.andrewdai.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.mrdrozdov.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.andrewhoang.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.andrewhollenbach.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.andrewlevandoski.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://www.andrewpage.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://andrewqtran.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ahndrewtam.me/",
+      "status": 404
+    },
+    {
+      "link": "http://andrewyang.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "https://amazingandyyy.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://andykamath.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://andrewwong.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "http://andy-wong.ca/",
+      "status": 404
+    },
+    {
+      "link": "http://aneeshashutosh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anirudhgoel.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://aniveera.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ankitmaverick.com/",
+      "status": 404
+    },
+    {
+      "link": "http://ankitsardesai.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ankitshah009.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ankitsultana.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anthonysistilli.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://arelin.me/",
+      "status": 404
+    },
+    {
+      "link": "http://antoniomarino.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anuraag.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anuragaryan.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anuragbanerjee.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anuragdubey.tech/",
+      "status": "alive"
+    },
+    {
+      "link": "http://aedorado.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anyatran.com/",
+      "status": 404
+    },
+    {
+      "link": "http://aparav.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ariari.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://arinray.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://arjunb.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://asarode.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://arkaganguli.ca/",
+      "status": 404
+    },
+    {
+      "link": "http://arnaudschenk.me/",
+      "status": 404
+    },
+    {
+      "link": "http://arnavgarg.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://arush.me/",
+      "status": 404
+    },
+    {
+      "link": "http://asaphyuan.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://asheertanveer.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ashishkedia.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://iashris.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ashokkoduru.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ashpanraskar.com/",
+      "status": 404
+    },
+    {
+      "link": "https://ashutoshanand.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ashwinkachhara.com/",
+      "status": 404
+    },
+    {
+      "link": "http://vayalinkal.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://aurybwashi.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.austinlchang.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://aliu139.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.avikejariwal.com/",
+      "status": 404
+    },
+    {
+      "link": "http://avijeetgupta.me/",
+      "status": 404
+    },
+    {
+      "link": "http://avijeets.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ayush1997.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://banghuazhao.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://benjamincongdon.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://benjdj6.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://helloben.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.benwr.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://719ben.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bernicewygo.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://berwin.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bilalmajeed.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://billguocheng.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bopace.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bamos.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://subdavis.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hello.brandontruong.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://brendanjryan.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bbovenzi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.brianchu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://devchuk.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://about.me/brijeshpatel9",
+      "status": "alive"
+    },
+    {
+      "link": "http://bmuk.io/",
+      "status": 404
+    },
+    {
+      "link": "http://brunofaviero.com/",
+      "status": 404
+    },
+    {
+      "link": "http://bryangarza.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.caitlinamcdonald.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.camilleconsidine.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://campionfellin.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://carolinehermans.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.cary.guru/",
+      "status": 404
+    },
+    {
+      "link": "http://cassidoo.co/",
+      "status": "alive"
+    },
+    {
+      "link": "https://chaibapchya.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://chaitanyajoshi.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "https://chamow97.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cydrobolt.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://charlesma4.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://charliekingston.co.uk/",
+      "status": "dead"
+    },
+    {
+      "link": "http://www.charmaineklee.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.chengpeng.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "http://chetanbadhe.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://availchet.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://pattu777.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.chi6rag.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://chiragchauhan.com/",
+      "status": 404
+    },
+    {
+      "link": "http://codeandconfusion.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://chrislai.info/",
+      "status": 404
+    },
+    {
+      "link": "http://collegefill.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.cbarcenas.com/",
+      "status": 404
+    },
+    {
+      "link": "http://christinaplatt.weebly.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ingochris.tech/",
+      "status": "alive"
+    },
+    {
+      "link": "http://scottdchris.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cvsmith.me/",
+      "status": 404
+    },
+    {
+      "link": "http://christopher.su/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cindyyu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://claytonbrand.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cmacca.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "http://www.connor-a-smith.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cosileone.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cyrusroshan.me/",
+      "status": 404
+    },
+    {
+      "link": "http://stdako.com/",
+      "status": 404
+    },
+    {
+      "link": "https://dvappel.me/",
+      "status": 404
+    },
+    {
+      "link": "http://danfujita.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.danlandy.com/",
+      "status": 404
+    },
+    {
+      "link": "http://danielni.me/",
+      "status": 404
+    },
+    {
+      "link": "http://danrs.ch/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.danzhang.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://danagilliann.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.danbarychev.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://drakontas.org/",
+      "status": "alive"
+    },
+    {
+      "link": "https://arthelon.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://yeralin.net/",
+      "status": 404
+    },
+    {
+      "link": "http://www.danyabaron.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://darioncassel.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://darrengilbert.rocks/",
+      "status": 404
+    },
+    {
+      "link": "http://darrentu.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://www.darshansharma.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://aslittledesign.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://davefont.com/",
+      "status": 404
+    },
+    {
+      "link": "http://davidawad.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://davidcoven.me/",
+      "status": 404
+    },
+    {
+      "link": "http://dasilvacont.in/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.david-mattia.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.davidmeza.us/",
+      "status": "alive"
+    },
+    {
+      "link": "http://deepakpathania.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://derekhua.me/",
+      "status": 404
+    },
+    {
+      "link": "http://100.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://dhiraj.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://arora.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://dhruvramani.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://dchang87.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://doerhub.com/of/diana",
+      "status": "alive"
+    },
+    {
+      "link": "http://dschana.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://diogocapela.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ezhik.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.dimshik.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.dominicdabish.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://dmcintyre.net/",
+      "status": 404
+    },
+    {
+      "link": "http://eladkeyshawn.tk/",
+      "status": 404
+    },
+    {
+      "link": "http://eli-white.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://elailai94.surge.sh/",
+      "status": "alive"
+    },
+    {
+      "link": "http://elissashevinsky.com/",
+      "status": 404
+    },
+    {
+      "link": "http://ericbachmeier5.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://thecreedo.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ericsong.io/",
+      "status": "dead"
+    },
+    {
+      "link": "https://ericz.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://richardsonethan.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.echeung.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://eakigbo.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ezefranca.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.fahadahmad.me/",
+      "status": 404
+    },
+    {
+      "link": "http://faiz.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://thefanzhang.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://fisheradelakin.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://fletcher.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hackerqueue.herokuapp.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://freddiev4.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.gagandeep.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://gagikm.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://iotenthu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://gangeshwark.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://garyyauchan.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.gautam.cc/",
+      "status": "alive"
+    },
+    {
+      "link": "https://gauthamzz.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://georgel.ee/",
+      "status": "alive"
+    },
+    {
+      "link": "http://gibrangarcia.me/",
+      "status": 404
+    },
+    {
+      "link": "http://gordn.org/",
+      "status": "alive"
+    },
+    {
+      "link": "https://thegenuinegourav.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.grant.ai/",
+      "status": "alive"
+    },
+    {
+      "link": "http://grant.cm/",
+      "status": "alive"
+    },
+    {
+      "link": "http://greysonparrelli.com/",
+      "status": 404
+    },
+    {
+      "link": "http://gberger.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://raunaq.me/",
+      "status": 404
+    },
+    {
+      "link": "https://gurnoorsingh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://gyanl.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://hamzakhan.org/",
+      "status": "alive"
+    },
+    {
+      "link": "http://harrischristiansen.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hgogonis.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://royalharsh.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://harshay.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://harshitbudhraja.snustudents.in/",
+      "status": 404
+    },
+    {
+      "link": "http://harveychan.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hassannadeem.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://haydenlee.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://henrymillison.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://htadg.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hiteshkaushik28.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hughrawlinson.me/",
+      "status": 404
+    },
+    {
+      "link": "http://larcolabs.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://hussainabbas.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ian.sh/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ianjennin.gs/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ian.pw/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.ianww.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://iahmed.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ignacioalonso.me/",
+      "status": "dead"
+    },
+    {
+      "link": "http://iheanyi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://isaacaddis.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://isaacgluck.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ismaelrh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jackfischer.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.lykpic.com/",
+      "status": 404
+    },
+    {
+      "link": "http://jacklamberti.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://handsome.rocks/",
+      "status": 404
+    },
+    {
+      "link": "https://www.jackwearden.co.uk/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jacobejenkins.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jairampatel.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jamesbillingham.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jameskao.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://jamesliu.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jimivyas.me/",
+      "status": 404
+    },
+    {
+      "link": "http://jamonek.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://dujason.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jxnl.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jasonpark.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://javiertaylor.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.jaxonstevens.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jgkamat.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jaymo.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.jaylenwimbish.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://linjeffrey.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://apacible.us/",
+      "status": "alive"
+    },
+    {
+      "link": "https://jennifertran.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://jeremiahlukus.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://jac21.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jeremymeyer.us/",
+      "status": 404
+    },
+    {
+      "link": "http://jericahuang.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jerrick.us/",
+      "status": 404
+    },
+    {
+      "link": "https://jessdejong.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jessechand.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jtcollins.me/",
+      "status": "dead"
+    },
+    {
+      "link": "http://jessmchang.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jevinsidhu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jiaw.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jianweichuah.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.notajingoist.com/index.html",
+      "status": 404
+    },
+    {
+      "link": "http://joeduncko.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jonalmeida.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.jonnykrysh.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.byjor.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://josephkhawly.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://josephmilla.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://josephpena.me/",
+      "status": 404
+    },
+    {
+      "link": "https://www.joshuasnider.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.josica.me/",
+      "status": 404
+    },
+    {
+      "link": "http://joshuakcockrell.com/",
+      "status": 404
+    },
+    {
+      "link": "http://joshuaraichur.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jchomali.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://junhsonjb.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://justicesuh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://justincaustin.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://justinbleuel.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://justinborromeo.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://jcano.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://justinthec.me/",
+      "status": 404
+    },
+    {
+      "link": "http://justinkuang.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://justinpaulin.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://y4ng.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kameshvedula.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.goel.im/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.karanprime.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://karansh.me/",
+      "status": 404
+    },
+    {
+      "link": "http://karel.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.intrepidkarthi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kaustavha.github.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://keatco.de/",
+      "status": 404
+    },
+    {
+      "link": "https://kensch.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://keon.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.kevinmbeaulieu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.kevinfrans.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kevinguh.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kevinji.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kevinpath.net/",
+      "status": 404
+    },
+    {
+      "link": "http://www.kevinpayravi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kevinpei.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kyeh.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://blog.kevinzhang.me/",
+      "status": 404
+    },
+    {
+      "link": "http://kilimchoi.com/",
+      "status": 404
+    },
+    {
+      "link": "http://kirbyk.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.kirstenrauffer.com/",
+      "status": 404
+    },
+    {
+      "link": "http://itskrish.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://krishmunot.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://krishn.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kristiansooklal.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://anirudha.org/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kylefrost.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kylejson.com/",
+      "status": "dead"
+    },
+    {
+      "link": "http://larryasante.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "http://laurencewelch.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://lawrencemurata.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://coderlex.com/",
+      "status": 404
+    },
+    {
+      "link": "http://xuanji.li/",
+      "status": "alive"
+    },
+    {
+      "link": "http://lihorne.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://liamrahav.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://liang.gao.nyc/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.hatfolk.com/",
+      "status": "dead"
+    },
+    {
+      "link": "http://ltran.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://iamvoid13.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "http://lukamarr.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mahirk.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mandal.manash.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://manoj.ninja/",
+      "status": "alive"
+    },
+    {
+      "link": "http://manojpandey.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://manrajsingh.in/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bettiolo.it/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mariachavez.co/",
+      "status": 404
+    },
+    {
+      "link": "http://markediez.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://www.markormesher.co.uk/",
+      "status": "alive"
+    },
+    {
+      "link": "http://markanpatel.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://fr1sk.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.martinpetkov.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://masoudh.ml/",
+      "status": "dead"
+    },
+    {
+      "link": "http://cassiano.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://matisseverduyn.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://themattchan.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://matt.cond.in/",
+      "status": "alive"
+    },
+    {
+      "link": "http://matthewallen.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "https://mbell.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://bentley.link/",
+      "status": "alive"
+    },
+    {
+      "link": "http://matthewbucci.com/",
+      "status": 404
+    },
+    {
+      "link": "http://mkaiser.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kaufer.org/",
+      "status": "alive"
+    },
+    {
+      "link": "http://maxjmay.co.uk/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mxms.pw/",
+      "status": "alive"
+    },
+    {
+      "link": "http://meetshah1995.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://maruthven.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://mehul-m-prajapati.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shanewilton.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mkgo.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://michaelchum.com/",
+      "status": 404
+    },
+    {
+      "link": "http://michaelyh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://hulet.tech/",
+      "status": "alive"
+    },
+    {
+      "link": "https://mileung.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://devmichaelpark.com/",
+      "status": 404
+    },
+    {
+      "link": "http://michaelz.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.milandasgupta.com/",
+      "status": 404
+    },
+    {
+      "link": "http://milstein.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ming-luo.com/",
+      "status": 404
+    },
+    {
+      "link": "http://minh.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mitchgordon.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mohaiminalaoun.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mgaggutur.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.maqbool.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mohan08p.strikingly.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://aboutmonica.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://morgante.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mosheberman.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mubaris.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mfcecilia.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nakulpathak.com/",
+      "status": 404
+    },
+    {
+      "link": "http://www.namanmaheshwari.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://namitjuneja.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://naomi.codes/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ghostwriternr.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://thenaterhood.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nateo.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://natbj.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://natumyers.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://naveenshukla.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://navierula.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nealshyam.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://neerajaggarwal.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://neilpatelportfolio.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ngomez.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nelsonliu.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kompulsa.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://meadowlab.io/",
+      "status": "dead"
+    },
+    {
+      "link": "https://nickzuber.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nicohinderling.me/",
+      "status": 404
+    },
+    {
+      "link": "https://nikhita.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nimit.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://niraj.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://nishanths.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://noahhradek.me/",
+      "status": 404
+    },
+    {
+      "link": "http://noamhacker.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://nogaraviv.com/",
+      "status": 404
+    },
+    {
+      "link": "http://odutta.com/",
+      "status": 404
+    },
+    {
+      "link": "http://oreoluwa.me/",
+      "status": 404
+    },
+    {
+      "link": "http://ouye.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "https://konaraddio.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "https://pecey.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://pkm.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://pandelis.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://parthmehrotra.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://patmyron.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.cs.toronto.edu/~patricio",
+      "status": "alive"
+    },
+    {
+      "link": "http://tumbucon.tech/",
+      "status": "dead"
+    },
+    {
+      "link": "http://paulkr.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.pawel.pw/",
+      "status": "alive"
+    },
+    {
+      "link": "http://peterleng.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://phil.ws/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.prabhakargupta.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.pradyumanvig.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://prateekiiest.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.bauva.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://bajracharya.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://prestonmueller.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://aroundthelines.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://lemonzi.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://raghavdua.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://raghavsood.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tutejarahul.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rajasekarm.com/",
+      "status": 404
+    },
+    {
+      "link": "https://www.cdrrazan.me/",
+      "status": 404
+    },
+    {
+      "link": "http://rajatmehndiratta.me/",
+      "status": 404
+    },
+    {
+      "link": "http://raphaelrk.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rashiq.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ravinsardal.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rlingineni.me/",
+      "status": 404
+    },
+    {
+      "link": "https://rchung95.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://cs.wisc.edu/~riccardo",
+      "status": "alive"
+    },
+    {
+      "link": "http://churichard.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://riichard.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sirvar.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rishi.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.rishidua.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ritvik1512.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "https://robertkim.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://robbyoconnor.us/",
+      "status": "alive"
+    },
+    {
+      "link": "http://robertolsthoorn.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.robreinold.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.robinvanwijngaarden.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://robinwakeman.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rodrigoargumedo.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rogergzou.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rohanlikhite.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rohan-varma.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://royels.me/",
+      "status": 404
+    },
+    {
+      "link": "http://ronwright.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ronakshah.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rootulp.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rosygupta.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://rooday.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.ruiqimao.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.rshah.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://panchr.me/",
+      "status": 404
+    },
+    {
+      "link": "http://ryanjchoi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://dsouzarc.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ryanfitzgerald.ca/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ryanlin.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.rsenapps.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ryhan.org/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rohithvaranasi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sagargarg.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sahib.ch/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.sahibjot.me/",
+      "status": 404
+    },
+    {
+      "link": "http://sahildua.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://grandhi.me/",
+      "status": 404
+    },
+    {
+      "link": "http://shamadeh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tekee.herokuapp.com/",
+      "status": "dead"
+    },
+    {
+      "link": "https://shamdasani.org/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sameerkhoja.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.sameerkumar.website/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sanil.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sanghan.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.sanjeevs.net/",
+      "status": 404
+    },
+    {
+      "link": "http://smudkavi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.sanyamkhurana.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://www.wisdomgeek.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://saurabhmarpadge.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://srbaxter.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://scottmangiapane.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://spru.sr/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.smgoodrich.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://seanssmith.me/",
+      "status": 404
+    },
+    {
+      "link": "http://smerz.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.christianvermeulen.net/",
+      "status": "alive"
+    },
+    {
+      "link": "http://selynnasun.me/",
+      "status": 404
+    },
+    {
+      "link": "http://sztoo.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ftxrc.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "http://spuleri.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shaashwat.co.nf/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shabansamani.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sdulal.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.shailshetye.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shaktigoap.in/",
+      "status": "alive"
+    },
+    {
+      "link": "http://meeoh.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shanedewael.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sharonlin.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shashanksaxena.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shashankshekhar.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sheikharaf.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shibasisp.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://shikib.ca/",
+      "status": 404
+    },
+    {
+      "link": "http://shivams334.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.shinwang.us/",
+      "status": 404
+    },
+    {
+      "link": "http://shrutiappiah.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://moghya.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://ruparel.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://simeon.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://stang.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "http://individual.utoronto.ca/channelSW/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sonnylab.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sourabh.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://sravb.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sreetamdas.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sricharan.xyz/",
+      "status": "alive"
+    },
+    {
+      "link": "http://techfilmer.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://srikarg.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://ssrinivaas.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://sriranganathan.me/",
+      "status": 404
+    },
+    {
+      "link": "http://stanleylim.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.stephanboyer.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://stephenc.me/",
+      "status": "alive"
+    },
+    {
+      "link": "https://sgre.co/",
+      "status": "alive"
+    },
+    {
+      "link": "http://about.me/stevenmdean",
+      "status": "alive"
+    },
+    {
+      "link": "http://stevenbock.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://kneiser.space/",
+      "status": "alive"
+    },
+    {
+      "link": "http://suminkim.me/",
+      "status": 404
+    },
+    {
+      "link": "http://smuralidhar.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://suhith.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://sukhmeet032795.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://summyfeb12.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.eng.uwaterloo.ca/~sn3shah/",
+      "status": "alive"
+    },
+    {
+      "link": "https://sushshring.me/",
+      "status": 404
+    },
+    {
+      "link": "http://suyashlakhotia.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://suzenfylke.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://swati4star.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://swatimaheshwari.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://taher.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tanaka.co.zw/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tejas.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tejasnikumbh.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://taehongmin.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://thomaslam.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://timsitorus.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://horner.tj/hello",
+      "status": "alive"
+    },
+    {
+      "link": "http://tomkoker.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tristanwiley.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.tuvtran.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://chopratushar.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tylucaskelley.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://dare.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://tylermarkpeterson.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://udiscover.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://usmann.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.vaibhavgeek.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.codepreneur.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vanshgandhi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://mehtav.xyz/",
+      "status": 404
+    },
+    {
+      "link": "https://heysadboy.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://rajamane.io/",
+      "status": 404
+    },
+    {
+      "link": "http://varunshenoy.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vedantrathore.github.io/",
+      "status": 404
+    },
+    {
+      "link": "http://venkatraman.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vetriselvi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://victorlourng.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://victorzhou.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vigneshm.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vikasparashar.in/",
+      "status": "alive"
+    },
+    {
+      "link": "https://vikramtiwari.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://vinayh.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vortex-ape.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "https://vincentyang.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vipinsharma.me/",
+      "status": 404
+    },
+    {
+      "link": "http://vishnuks.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vishnun.github.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://vishnu.io/",
+      "status": "alive"
+    },
+    {
+      "link": "https://vivekvaidya.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://thabraze.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://willft.io/",
+      "status": "alive"
+    },
+    {
+      "link": "http://syrexide.com/",
+      "status": 404
+    },
+    {
+      "link": "http://www.hellowilliam.com/",
+      "status": 404
+    },
+    {
+      "link": "http://williamliu.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://woodruffw.us/",
+      "status": "alive"
+    },
+    {
+      "link": "http://wilsonding.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.winsonluk.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://xiaojunhe.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://iyask.me/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.yashamostofi.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://roumie.me/",
+      "status": 404
+    },
+    {
+      "link": "http://www.yatingupta.me/",
+      "status": 404
+    },
+    {
+      "link": "http://yef.im/",
+      "status": "alive"
+    },
+    {
+      "link": "http://yusifalizada.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://zfo.gg/",
+      "status": "dead"
+    },
+    {
+      "link": "http://zjaffee.com/",
+      "status": "alive"
+    },
+    {
+      "link": "http://zacharyespiritu.com/",
+      "status": "alive"
+    },
+    {
+      "link": "https://zakariaridouh.github.io/",
+      "status": "dead"
+    },
+    {
+      "link": "http://enetdown.org/",
+      "status": "alive"
+    },
+    {
+      "link": "http://www.zeeshanmughal.com/",
+      "status": "alive"
+    }
+  ]
+}

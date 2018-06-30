@@ -9,13 +9,27 @@
     "react-anime": "^2.1.0",
     "react-dom": "^16.4.1",
     "react-dropzone": "^4.2.11",
+    "react-js-pagination": "^3.0.2",
+    "react-light-notifications": "^1.0.3",
     "react-scripts": "1.1.4",
-    "react-scroll": "^1.7.9"
+    "react-scroll": "^1.7.9",
+    "validator": "^10.4.0"
   },
   "scripts": {
     "start": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build && cp -r build/* ../client/",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "prettier-eslint": "^8.8.2"
   }
 }

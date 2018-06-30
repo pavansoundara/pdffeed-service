@@ -7,15 +7,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "FileName": {
-      "type": "string",
-      "required": true
-    },
-    "Links": {
-      "type": [
-        "string"
-      ]
-    }
   },
   "validations": [],
   "relations": {},

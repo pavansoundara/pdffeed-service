@@ -60,7 +60,9 @@
     "strong-error-handler": {
       "params": {
         "debug": false,
-        "log": false
+        "5xx": true,
+        "4xx": false,
+        "403": true
       }
     }
   }

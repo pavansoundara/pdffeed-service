@@ -1,9 +1,10 @@
 'use strict';
-let assert = require('assert');
 let pythonBridge = require('python-bridge');
+const domainPing = require('domain-ping');
 let linkCheck = require('link-check');
+// let assert = require('assert');
+var validator = require('validator');
 let url = require('url');
-let ping = require('ping');
 
 module.exports = function(Checker) {
   Checker.getLinks = function(URL, cb) {
@@ -26,37 +27,42 @@ module.exports = function(Checker) {
         x = [];
         cb(null, x);
       } else {
-        var response = x;
         python.end();
-        cb(null, response);
+        cb(null, x);
       }
     }).catch(error => {
       let errorType = error.exception.type.name;
       let err;
-      console.log(error.exception);
-      if (errorType == 'PDFSyntaxError') {
-        err = new Error('Document should be of PDF format/type.');
-        err.statusCode = 400;
-      } else if (errorType == 'URLError') {
-        err = new Error('Unable to reach the provided URL.');
-        err.statusCode = 404;
-      } else if (errorType == 'NameError') {
-        err = new Error('Please check your file and try again.');
-        err.statusCode = 400;
-      } else if (errorType == 'HTTPError') {
-        err = new Error('File not found.');
-        err.statusCode = 404;
-      } else if (errorType == 'IOError') {
-        err = new Error('File not found locally');
-        err.statusCode = 404;
-      } else if (errorType == 'ValueError') {
-        err = new Error(error.exception.message);
-        err.statusCode = 400;
-      } else {
-        err = new Error('Something went wrong. Please try again.');
-        err.statusCode = 501;
-      }
 
+      switch (errorType) {
+        case 'PDFSyntaxError':
+          err = new Error('Document should be of PDF format/type.');
+          err.statusCode = 400;
+          break;
+        case 'URLError':
+          err = new Error('Unable to reach the provided URL.');
+          err.statusCode = 404;
+          break;
+        case 'NameError':
+          err = new Error('Please check your file and try again.');
+          err.statusCode = 400;
+          break;
+        case 'HTTPError':
+          err = new Error('File not found at provided URL.');
+          err.statusCode = 404;
+          break;
+        case 'IOError':
+          err = new Error('File not found on the server');
+          err.statusCode = 404;
+          break;
+        case 'ValueError':
+          err = new Error(error.exception.message);
+          err.statusCode = 400;
+          break;
+        default:
+          err = new Error('Something went wrong. Please try again.');
+          err.statusCode = 501;
+      }
       cb(err);
     });
   };
@@ -82,42 +88,68 @@ module.exports = function(Checker) {
   );
 
   Checker.checkLinks = function(links, cb) {
+    /* Future Work: Clean up and rejecting promises aptly */
     function checkSingleLink(link) {
       return new Promise((resolve, reject) => {
+        /* Future work: Clean up! */
         let adr = link.replace(/[${}|[\]\\<>]/g, '');
+
         /* https://www.regextester.com/94502 */
         let matchUrl = adr.match(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g);
-        if (matchUrl == null || matchUrl.length < 1) {
+        // let matchUrl = validator.isURL(adr);
+        if (matchUrl == null || matchUrl < 1) {
           resolve({
             'link': adr,
             'status': null,
           });
         }
+
+        if (!adr.match(/^[a-zA-Z]+:\/\//)) {
+          adr = 'http://' + adr;
+        }
+
         let q = url.parse(adr, true);
-        ping.sys.probe(q.host, function(isAlive) {
-          if (isAlive) {
-            if (adr.search(/linkedin.com/i) > 0) {
+        /* Future work: Combine both packages into one for easier implementation */
+        domainPing(q.host)
+          .then(res =>{
+            if (res.success || res.ping) {
+              if (adr.search(/linkedin.com/i) > 0) {
+                resolve({
+                  'link': adr,
+                  'status': null,
+                });
+              } else {
+                linkCheck(adr, function(err, result) {
+                  if (err) {
+                    return err;
+                  }
+                  resolve({
+                    'link': result.link,
+                    'status': result.status,
+                  });
+                });
+              }
+            } else {
               resolve({
                 'link': adr,
-                'status': null,
+                'status': res.statusCode,
               });
             }
-            linkCheck(adr, function(err, result) {
-              if (err) {
-                return err;
-              }
-              resolve({
-                'link': result.link,
-                'status': result.status,
-              });
-            });
-          } else {
-            resolve({
-              'link': adr,
-              'status': 404,
-            });
-          }
-        });
+          }).catch(err => {
+            let customErr = {
+              link: adr,
+              status: '',
+            };
+
+            if (err.error.substr(0, 20) == 'Exceeded maxRedirect') {
+              customErr.status = 'exceeded max redirects';
+            } else if (err.error == 'unable to verify the first certificate') {
+              customErr.status = 'unable to verify certificate';
+            } else {
+              customErr.status = 'address unreachable';
+            }
+            resolve(customErr);
+          });
       });
     }
 
@@ -133,26 +165,30 @@ module.exports = function(Checker) {
         });
       });
     }
-    console.log(links);
+
     filterLinks(links).then(filteredLinks => {
-      console.log(filteredLinks);
       cb(null, filteredLinks);
+    }).catch(error => {
+      let err = new Error('Something went wrong. Please try again.');
+      err.statusCode = 501;
     });
   };
 
-  Checker.remoteMethod('checkLinks', {
-    http: {
-      path: '/checkLinks',
-      verb: 'post',
-      source: 'body',
-    },
-    accepts: {
-      arg: 'links',
-      type: 'array',
-    },
-    returns: {
-      arg: 'links',
-      type: 'array',
-    },
-  });
+  Checker.remoteMethod(
+    'checkLinks', {
+      http: {
+        path: '/checkLinks',
+        verb: 'post',
+        source: 'body',
+      },
+      accepts: {
+        arg: 'links',
+        type: 'array',
+      },
+      returns: {
+        arg: 'links',
+        type: 'array',
+      },
+    }
+  );
 };
