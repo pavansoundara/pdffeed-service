@@ -59,10 +59,10 @@
   "final:after": {
     "strong-error-handler": {
       "params": {
+        "403": true,
         "debug": false,
         "5xx": true,
-        "4xx": false,
-        "403": true
+        "4xx": false
       }
     }
   }

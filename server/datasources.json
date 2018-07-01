@@ -8,6 +8,9 @@
     "connector": "loopback-component-storage",
     "provider": "filesystem",
     "root": "./uploads",
-    "allowedContentTypes": ["application/pdf"]
+    "allowedContentTypes": [
+      "application/pdf"
+    ],
+    "nameConflict": "makeUnique"
   }
 }

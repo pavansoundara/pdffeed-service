@@ -1,4 +1,5 @@
 'use strict';
+var CONTAINERS_URL = '/api/containers/';
 let pythonBridge = require('python-bridge');
 const domainPing = require('domain-ping');
 let linkCheck = require('link-check');

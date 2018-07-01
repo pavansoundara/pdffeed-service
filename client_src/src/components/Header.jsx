@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <div className='app__logocap col-md-12'>
           <h6>
-            Extract links from pdf.Check for broken links in pdf.
+            Extract links from pdf. Check for broken links in pdf.
           </h6>
         </div>
       </div>

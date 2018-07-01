@@ -3,29 +3,21 @@ import PropTypes from 'prop-types'
 import Dropzone from 'react-dropzone'
 import Pagination from 'react-js-pagination'
 
-import pdf from './pdf-file.svg'
-
-import './App.css'
+import pdf from '../assets/pdf-file.svg'
 
 class Box extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      // activePage: 1,
-      // pageItemCount: 10
     }
-    // this.handlePageChange = this.handlePageChange.bind(this)
   }
-
-  // handlePageChange (pageNumber) {
-  //   this.setState({
-  //     activePage: pageNumber
-  //   })
-  // }
 
   render () {
     let box = ''
     let loader = ''
+    let statusIcon = ''
+    let itemId = 0
+
     if (!this.props.statusLoading) {
       loader = 'd-none'
     }
@@ -42,13 +34,14 @@ class Box extends React.Component {
         <Dropzone accept='application/pdf'
           multiple={false}
           onDrop={this.props.dropped}
+          onDropRejected={this.props.dropRejected}
           type='file'
-          className='form-control upload-box'>
-          <img src={pdf} alt='pdf icon' />
-          <h5>
+          className='form-control uploadbox'>
+          <img className='uploadbox--image' src={pdf} alt='pdf icon' />
+          <h5 className='uploadbox--title'>
             Drag &amp; Drop
           </h5>
-          <p>
+          <p className='uploadbox--text'>
             Choose a file or drag it here
           </p>
         </Dropzone>
@@ -60,6 +53,7 @@ class Box extends React.Component {
         indexOfFirstItem,
         indexOfLastItem
       )
+
       if (currentItems.length > 0) {
         box =
           <div className='card'>
@@ -80,9 +74,47 @@ class Box extends React.Component {
                     </th>
                   </tr>
                 </thead>
-                <tbody> { currentItems.map(item => {
+                <tbody>{ currentItems.map(item => {
+                  itemId++
+                  /* Switch to switch case */
+                  if (item.status === 'dead') {
+                    statusIcon = <div className='statusIcons'>
+                      <i className='material-icons icon--dead'>
+                      cancel
+                      </i>
+                      <span
+                        className='tooltiptext tooltip-left tooltiptext--error'>
+                      Address Reachable.<br />
+                      Link Dead.
+                      </span>
+                    </div>
+                  } else if (item.status === 'alive') {
+                    statusIcon = <i className='material-icons icon--alive'>
+                    check_circle
+                    </i>
+                  } else if (item.status === null) {
+                    statusIcon = <div className='statusIcons'>
+                      <i className='material-icons icon--info'>
+                      info
+                      </i>
+                      <span className='tooltiptext tooltip-left'>
+                      Unsupported URL
+                      </span>
+                    </div>
+                  } else if (item.status === '-') {
+                    statusIcon = <span>-</span>
+                  } else {
+                    statusIcon = <div className='statusIcons'>
+                      <i className='material-icons icon--notf'>
+                      warning
+                      </i>
+                      <span className='tooltiptext tooltip-left'>
+                        {item.status}
+                      </span>
+                    </div>
+                  }
                   return (
-                    <tr>
+                    <tr key={itemId}>
                       <td className='td--links'>
                         { item.link}
                         <a
@@ -95,7 +127,7 @@ class Box extends React.Component {
                         </a>
                       </td>
                       <td>
-                        {(item.status == null) ? <span>-</span> : item.status}
+                        {statusIcon}
                       </td>
                     </tr>
                   )
@@ -131,6 +163,7 @@ class Box extends React.Component {
           </div>
       }
     }
+
     return (
       <div>
         {box}
@@ -147,7 +180,8 @@ Box.propTypes = {
   pageChanged: PropTypes.func,
   pageItemCount: PropTypes.number,
   activePage: PropTypes.number,
-  statusLoading: PropTypes.bool
+  statusLoading: PropTypes.bool,
+  dropRejected: PropTypes.func
 }
 
 export default Box

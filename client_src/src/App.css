@@ -4,48 +4,53 @@
 
 .app__header {
     background: #fdfbfb;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    /* Chrome 10-25, Safari 5.1-6 */
+    background: -moz-linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background: -o-linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background: -ms-linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background: -webkit-gradient(linear, 120deg, color-stop(0%, #fdfbfb), color-stop(100%, #ebedee));
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     color: white;
     height: 160px;
     padding: 20px;
 }
 
 .app__logo {
-    height: 50px;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 50px;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .app__icon {
+    color: blue;
+    display: block;
+    fill: currentColor;
     height: 65px;
     width: auto;
-    display: block;
-    color: blue;
-    fill: currentColor;
 }
 
 .app__logotext {
+    clear: both;
     color: #383838;
     font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    font-size: 3.5em;
     font-style: normal;
-    font-size: 3.5em !important;
-    text-transform: capitalize;
+    font-weight: 900;
     margin: 0;
     padding-top: 15px;
-    clear: both;
+    text-transform: capitalize;
 }
 
 .app__logotext--super {
+    color: #5f5f5f;
     font-size: 0.25em;
     font-weight: 100;
     top: -2.2em;
-    color: #5f5f5f;
 }
 
 .app__logotext--red {
@@ -54,89 +59,45 @@
 
 .noselect {
     -webkit-touch-callout: none;
-    /* iOS Safari */
     -webkit-user-select: none;
-    /* Safari */
     -khtml-user-select: none;
-    /* Konqueror HTML */
     -moz-user-select: none;
-    /* Firefox */
     -ms-user-select: none;
-    /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-  supported by Chrome and Opera */
 }
 
 .app__logocap {
-    color: rgba(0, 0, 0, 0.5);
-    padding-top: 2px;
+    color: #7a7a7a;
     font-family: "Lato", sans-serif;
+    padding-top: 2px;
 }
 
 .card {
-    width: 100%;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
-}
-
-.card--gray {
-    background-color: #bbbbbb !important;
-}
-
-.card--searchbar {
-    height: 60px;
-    border-radius: 2px;
-    margin-top: -34px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .card__options {
-    width: 100%;
-    height: 80px;
     float: right;
+    height: 80px;
+    width: 100%;
 }
 
 .card__input {
-    width: 95%;
-    border: 0px;
+    border: 0;
+    color: #383838;
+    font-size: 1.25rem;
     height: 44px;
     margin-top: 7px;
-    font-size: 1.25rem;
-    color: #383838;
+    width: 95%;
 }
 
 .card__searchbutton {
+    cursor: pointer;
     font-size: 40px;
     height: 60px;
     padding-top: 10px;
-    cursor: pointer;
-}
-
-.card--buttoncolor {
-    color: #383838 !important;
-}
-
-.card--buttoncolor:hover {
-    color: #808080 !important;
-}
-
-::placeholder {
-    color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    /* Firefox */
-    font-size: 1.25rem;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: rgba(0, 0, 0, 0.2);
-    font-size: 1.25rem;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: rgba(0, 0, 0, 0.2);
-    font-size: 1.25rem;
 }
 
 .card__input.active,
@@ -144,6 +105,45 @@
     border: none;
     outline: none;
 }
+
+.card--gray {
+    background-color: #bbbbbb;
+}
+
+.card--searchbar {
+    border-radius: 2px;
+    height: 60px;
+    margin-top: -34px;
+}
+
+.card--buttoncolor {
+    color: #383838;
+}
+
+.card--buttoncolor:hover {
+    color: #808080;
+}
+
+::placeholder {
+    color: #5f5f5f;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #5f5f5f;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+}
+
+::-ms-input-placeholder {
+    color: #5f5f5f;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+}
+
+/* Extracted Links/OR place holder */
 
 .app__placehold {
     color: #ffffff;
@@ -154,57 +154,52 @@
 }
 
 .card--uploadbox {
-    min-height: 150px;
     background: -webkit-linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%);
-    /* Chrome 10-25, Safari 5.1-6 */
+    background: -moz-linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%);
+    background: -o-linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%);
+    background: -ms-linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%);
+    background: -webkit-gradient(linear, 160deg, color-stop(0%, #fdfbfb), color-stop(100%, #ebedee));
     background-image: linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%);
     cursor: pointer;
+    min-height: 150px;
 }
 
-.upload-box {
-    border: 2px dashed darkgrey;
+.uploadbox {
     background-color: transparent;
-    text-align: center;
+    border: 2px dashed darkgrey;
     height: 160px;
-    width: 98%;
     margin: 7px;
+    text-align: center;
+    width: 98%;
 }
 
-.upload-box img {
-    width: 80px;
+.uploadbox--image {
     margin-top: 10px;
-    /* -webkit-animation: breathing 0.5s linear 0s infinite normal both;
-  animation: breathing 0.5s linear 0s infinite normal both; */
+    width: 80px;
 }
 
 .pdfbox {
-    width: 80px;
-    padding-top: 10px;
-    margin: auto;
     height: auto;
+    margin: auto;
+    padding-top: 10px;
+    width: 80px;
 }
 
-.anim {
-    width: 40px !important;
-    -webkit-animation: breathing 0.9s linear 0s infinite normal both !important;
-    animation: breathing 0.9s linear 0s infinite normal both !important;
-    margin-top: -100px;
-}
-
-.upload-box h5 {
+.uploadbox--title {
     font-weight: bold;
 }
 
-.upload-box p {
-    margin-top: -10px;
-    font-size: 0.8rem;
+.uploadbox--text {
+    color: #7a7a7a;
     color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8rem;
+    margin-top: -10px;
 }
 
 .card__loading {
-    min-height: 400px;
     align-items: center;
     justify-content: center;
+    min-height: 400px;
 }
 
 .card__spinner {
@@ -220,60 +215,163 @@
     animation-delay: 0s;
     font-size: 60px;
     height: 60px;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .card__statusloading {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    min-height: 100%;
-    background: #ffffff;
-    z-index: 10000;
-    opacity: 0.8;
     align-items: center;
+    background: #ffffff;
+    display: flex;
     justify-content: center;
+    min-height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
 }
 
 .btn--basic {
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     font-family: "Lato", sans-serif;
     font-weight: lighter;
     margin: 10px;
     margin-top: 20px;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .btn--basic:hover {
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .btn--upload {
     background: #e52d27;
     background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+    background: -moz-linear-gradient(to right, #b31217 0%, #e52d27 100%);
+    background: -o-linear-gradient(to right, #b31217 0%, #e52d27 100%);
+    background: -ms-linear-gradient(to right, #b31217 0%, #e52d27 100%);
+    background: -webkit-gradient(linear, to right, color-stop(0%, #b31217), color-stop(100%, #e52d27));
     background: linear-gradient(to right, #b31217, #e74c3c);
 }
 
 .btn--upload:hover {
     background: #e52d27;
     background: -webkit-linear-gradient(120deg, #b31217, #e52d27);
+    background: -moz-linear-gradient(120deg, #b31217 0%, #e52d27 100%);
+    background: -o-linear-gradient(120deg, #b31217 0%, #e52d27 100%);
+    background: -ms-linear-gradient(120deg, #b31217 0%, #e52d27 100%);
+    background: -webkit-gradient(linear, 120deg, color-stop(0%, #b31217), color-stop(100%, #e52d27));
     background: linear-gradient(120deg, #b31217, #e74c3c);
 }
 
 .btn--check {
     background: #ECE9E6;
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: -moz-linear-gradient(to right, #FFFFFF 0%, #ECE9E6 100%);
+    background: -o-linear-gradient(to right, #FFFFFF 0%, #ECE9E6 100%);
+    background: -ms-linear-gradient(to right, #FFFFFF 0%, #ECE9E6 100%);
+    background: -webkit-gradient(linear, to right, color-stop(0%, #FFFFFF), color-stop(100%, #ECE9E6));
     background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
 .btn--check:hover {
     background: #ECE9E6;
     background: -webkit-linear-gradient(120deg, #FFFFFF, #ECE9E6);
+    background: -moz-linear-gradient(120deg, #FFFFFF 0%, #ECE9E6 100%);
+    background: -o-linear-gradient(120deg, #FFFFFF 0%, #ECE9E6 100%);
+    background: -ms-linear-gradient(120deg, #FFFFFF 0%, #ECE9E6 100%);
+    background: -webkit-gradient(linear, 120deg, color-stop(0%, #FFFFFF), color-stop(100%, #ECE9E6));
     background: linear-gradient(120deg, #FFFFFF, #ECE9E6);
 }
 
-/*Helper Classes */
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/* Table links status icons */
+
+.icon--alive {
+    color: #96e6a1;
+}
+
+.icon--dead {
+    border-bottom: 1px dotted #ccc;
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.icon--dead:hover {
+    color: #db796e;
+}
+
+.icon--info {
+    border-bottom: 1px dotted #ccc;
+    color: #5D9FFF;
+    cursor: pointer;
+}
+
+.icon--info:hover {
+    color: rgb(141, 185, 250);
+}
+
+.icon--notf {
+    border-bottom: 1px dotted #ccc;
+    color: #fddc41;
+    cursor: pointer;
+}
+
+.icon--notf:hover {
+    color: #ffeb92;
+}
+
+.statusIcons {
+    display: inline-block;
+    position: relative;
+}
+
+.statusIcons .tooltiptext {
+    background-color: #555;
+    border-radius: 6px;
+    color: #fff;
+    opacity: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    transition: opacity 0.3s;
+    visibility: hidden;
+    width: 120px;
+    z-index: 1;
+}
+
+.tooltiptext--error {
+    width: 160px !important;
+}
+
+.statusIcons .tooltiptext::after {
+    border-color: transparent transparent transparent #555;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    left: 100%;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+}
+
+.statusIcons:hover .tooltiptext {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip-left {
+    bottom: auto;
+    right: 128%;
+    top: -5px;
+}
+
+/*Modifier Classes - Included non BEM methods*/
 
 .material-icons--size16 {
     font-size: 16px;
@@ -284,7 +382,7 @@
 }
 
 .thead--shadow {
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
 .td--links {
@@ -305,9 +403,9 @@
 
 .table td,
 .table th {
-    max-width: 190px;
-    border-top: 0;
     border-bottom: 1px solid #dee2e6;
+    border-top: 0;
+    max-width: 190px;
 }
 
 .pagination {
@@ -320,23 +418,23 @@
 }
 
 .page-link--prev {
+    border: 0;
     border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    margin-right: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin-right: 10px;
-    font-size: 16px;
 }
 
 .page-link--next {
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     border: 0;
+    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    margin-left: 10px;
     font-size: 16px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px
 }
 
 .page-item {
@@ -360,25 +458,27 @@
 
 .page-link:hover {
     background-color: #e74c3c;
-    color: #ffffff;
     border-radius: 2px;
+    color: #ffffff;
 }
 
 .page-link:focus {
-    outline: 0;
+    outline: hidden;
 }
 
 .table-responsive-lg {
     min-height: 500px;
 }
 
+/* Custom view for mobile */
+
 @media (max-width: 433px) {
-    .upload-box {
+    .uploadbox {
         width: 95%;
     }
     .card__searchbutton {
-        margin-left: -15px;
         font-size: 35px;
+        margin-left: -15px;
         padding-top: 13px;
     }
     ::placeholder {
@@ -389,107 +489,13 @@
     }
 }
 
+/* Animations */
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes breathing {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    25% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    60% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    100% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-
-@keyframes breathing {
-    0% {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    25% {
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
-    60% {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    100% {
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-
-@-webkit-keyframes vibrate {
-    0% {
-        -webkit-transform: translate(0);
-        transform: translate(0);
-    }
-    20% {
-        -webkit-transform: translate(-2px, 2px);
-        transform: translate(-2px, 2px);
-    }
-    40% {
-        -webkit-transform: translate(-2px, -2px);
-        transform: translate(-2px, -2px);
-    }
-    60% {
-        -webkit-transform: translate(2px, 2px);
-        transform: translate(2px, 2px);
-    }
-    80% {
-        -webkit-transform: translate(2px, -2px);
-        transform: translate(2px, -2px);
-    }
-    100% {
-        -webkit-transform: translate(0);
-        transform: translate(0);
-    }
-}
-
-@keyframes vibrate {
-    0% {
-        -webkit-transform: translate(0);
-        transform: translate(0);
-    }
-    20% {
-        -webkit-transform: translate(-2px, 2px);
-        transform: translate(-2px, 2px);
-    }
-    40% {
-        -webkit-transform: translate(-2px, -2px);
-        transform: translate(-2px, -2px);
-    }
-    60% {
-        -webkit-transform: translate(2px, 2px);
-        transform: translate(2px, 2px);
-    }
-    80% {
-        -webkit-transform: translate(2px, -2px);
-        transform: translate(2px, -2px);
-    }
-    100% {
-        -webkit-transform: translate(0);
-        transform: translate(0);
     }
 }

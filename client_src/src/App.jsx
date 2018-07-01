@@ -7,9 +7,14 @@ import {
   NotificationManager
 } from 'react-light-notifications'
 
-import Box from './Box'
-import Header from './Header'
-import Buttons from './Buttons'
+import Box from './components/Box'
+import Header from './components/Header'
+import Buttons from './components/Buttons'
+import {
+  GETLINKS_API,
+  CHECKLINKS_API,
+  UPLOAD_API
+} from './constants'
 
 import './App.css'
 import 'react-light-notifications/lib/main.css'
@@ -41,6 +46,7 @@ class app extends Component {
     this.checkLinks = this.checkLinks.bind(this)
     this.notifyError = this.notifyError.bind(this)
     this.handlePageChange = this.handlePageChange.bind(this)
+    this.dropRejected = this.dropRejected.bind(this)
   }
 
   handleInputChange (event) {
@@ -53,7 +59,6 @@ class app extends Component {
   }
 
   handlePageChange (pageNumber) {
-    console.log(`active page is ${pageNumber}`)
     this.setState({
       activePage: pageNumber
     })
@@ -83,15 +88,9 @@ class app extends Component {
     )
   }
 
-  onDragEnter () {
-    this.setState({
-      dropzoneActive: true
-    })
-  }
-
-  onDragLeave () {
-    this.setState({
-      dropzoneActive: false
+  dropRejected () {
+    NotificationManager.error({
+      message: 'Document should be of PDF format/type.'
     })
   }
 
@@ -123,8 +122,7 @@ class app extends Component {
         loading: true
       })
     }
-    const getLinksApi = 'http://localhost:3000/api/Checker/getlinks'
-    Axios.get(getLinksApi, {
+    Axios.get(GETLINKS_API, {
       params: {
         url: this.state.inputUrl
       }
@@ -132,15 +130,16 @@ class app extends Component {
       let res = {
         linksCheck: []
       }
-      response.data.links.map(link => {
+      response.data.links.forEach(link => {
         res['linksCheck'].push({'link': link, status: '-'})
       })
       this.setState({
         links: response.data.links,
         loading: false,
         loaded: true,
-        linksCheck: res.linksCheck
-      })
+        linksCheck: res.linksCheck,
+        inputUrl: ''
+      }, this.clearSearch())
     }).catch(error => {
       this.setState({
         hasError: true,
@@ -156,12 +155,11 @@ class app extends Component {
   }
 
   uploadSingleFile () {
-    const CONTAINER_API = 'http://localhost:3000/api/Container/files/upload'
     let bodyFormData = new FormData()
     bodyFormData.set('file', this.state.files[0])
     Axios({
       method: 'post',
-      url: CONTAINER_API,
+      url: UPLOAD_API,
       params: {},
       data: bodyFormData
     }).then(response => {
@@ -170,13 +168,16 @@ class app extends Component {
         inputUrl: file.name
       },
       this.getLinks
+      // this.clearSearch()
       )
     }).catch(error => {
       this.setState({
         hasError: true,
         error: error.response,
         loading: false
-      })
+      }
+      // this.clearSearch()
+      )
     })
   }
 
@@ -184,7 +185,6 @@ class app extends Component {
     this.setState({
       statusLoading: true
     })
-    const CHECKLINKS_API = 'http://localhost:3000/api/Checker/checkLinks'
     if (this.state.loaded && this.state.links.length > 0) {
       var formObj = {
         'links': this.state.links
@@ -208,6 +208,10 @@ class app extends Component {
           statusLoading: false
         })
       })
+    } else {
+      NotificationManager.error({
+        message: 'No links to check.'
+      })
     }
   }
 
@@ -218,12 +222,16 @@ class app extends Component {
     })
   }
 
+  clearSearch () {
+    let s = document.getElementById('search-form')
+    s.value = ''
+  }
+
   componentDidMount () {
     this.nameInput.focus()
   }
 
   render () {
-    console.log(this.state)
     return (
       <div className='app'>
         <Header />
@@ -233,14 +241,17 @@ class app extends Component {
               <div className='card card--searchbar'>
                 <div className='row no-gutters'>
                   <div className='col-11 col-sm-11 col-xs-11'>
+                    {/* <form id='search-form'> */}
                     <input
                       type='text'
                       className='card__input'
                       name='inputUrl'
+                      id='search-form'
                       onChange={this.handleInputChange}
                       placeholder='http://www.example.com/file.pdf'
                       onKeyPress={this.handleKeyPress}
                       ref={(input) => { this.nameInput = input }} />
+                    {/* </form> */}
                   </div>
                   <div className='col-1 col-sm-1 col-xs-1'>
                     <div className='card__options'>
@@ -267,6 +278,7 @@ class app extends Component {
               <Box
                 {...this.state}
                 dropped={this.onDrop}
+                dropRejected={this.dropRejected}
                 pageChanged={this.handlePageChange} />
             </div>
             <NotificationContainer />
