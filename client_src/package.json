@@ -3,17 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "animejs": "^2.2.0",
     "axios": "^0.18.0",
     "react": "^16.4.1",
-    "react-anime": "^2.1.0",
     "react-dom": "^16.4.1",
     "react-dropzone": "^4.2.11",
     "react-js-pagination": "^3.0.2",
     "react-light-notifications": "^1.0.3",
-    "react-scripts": "1.1.4",
-    "react-scroll": "^1.7.9",
-    "validator": "^10.4.0"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
     "start": "set PORT=3001 && react-scripts start",

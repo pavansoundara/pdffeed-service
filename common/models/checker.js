@@ -1,10 +1,8 @@
 'use strict';
-var CONTAINERS_URL = '/api/containers/';
 let pythonBridge = require('python-bridge');
 const domainPing = require('domain-ping');
 let linkCheck = require('link-check');
 // let assert = require('assert');
-var validator = require('validator');
 let url = require('url');
 
 module.exports = function(Checker) {
@@ -97,7 +95,6 @@ module.exports = function(Checker) {
 
         /* https://www.regextester.com/94502 */
         let matchUrl = adr.match(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g);
-        // let matchUrl = validator.isURL(adr);
         if (matchUrl == null || matchUrl < 1) {
           resolve({
             'link': adr,
@@ -172,6 +169,7 @@ module.exports = function(Checker) {
     }).catch(error => {
       let err = new Error('Something went wrong. Please try again.');
       err.statusCode = 501;
+      cb(err);
     });
   };
 
