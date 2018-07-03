@@ -27,7 +27,12 @@ class Box extends React.Component {
         <i className='material-icons card__spinner'> data_usage
         </i>
         <p> Extracting
+          <p className='small'>
+          Documents are only stored for process duration and erased.<br />
+          Extracted data is not stored or used for any other purposes.
+          </p>
         </p>
+
       </div>
     } else if (!this.props.loading && !this.props.loaded) {
       box = <div className='card card--uploadbox'>
@@ -159,6 +164,9 @@ class Box extends React.Component {
             </i>
             <p>
               No Links Found.Try again.
+              <p className='small'>
+              Upload manually and check if URL method doesn't work.
+              </p>
             </p>
           </div>
       }
