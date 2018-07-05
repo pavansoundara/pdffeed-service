@@ -2,7 +2,7 @@ let baseUrl
 if (process.env.NODE_ENV === 'development') {
   baseUrl = 'http://localhost:3000/api'
 } else if (process.env.NODE_ENV === 'production') {
-  baseUrl = 'http://ec2-52-90-113-86.compute-1.amazonaws.com:3000/api'
+  baseUrl = 'https://pdffeed.com/api'
 }
 
 export const CHECKER_API = baseUrl + '/Checker'
